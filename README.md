@@ -1,2 +1,3 @@
 # T8_WAD_22
-Team 8, Web App Devs
+Team 8 Project Repo for 
+LTAT.05.004 - Web Application Development
