@@ -8,6 +8,11 @@
   .header >div{
     flex-basis: 110%;
   }
+
+  h3{
+    font-family: 'Dancing Script', cursive;
+font-family: 'Merriweather Sans', sans-serif;
+  }
   img {
     max-width: 10%;
     height:auto;
