@@ -2,9 +2,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="res/css/style.css">
     <title>Login</title>
 </head>
 <body>
+    <header class="header">
+        <a href="index.html">Home</a>
+        <a class="logo" href="#"><img src="res/images/me.png" width="50" height="50" alt="My picture"></a>
+    </header>
     
+    <form action="/action_page/php" method="post">
+        <div class="container">
+            <strong> Welcome to PostIt</strong>
+            <p> Create an account</p>
+            <p> or <br> Please log in </p>
+
+            <label for "email"></label>
+            <input type="email" placeholder="Email" name="email" required>
+            <br>
+            <label for "psw"></label>
+            <input type="password" placeholder="Password" name="psw" required>
+            <br>
+            <button type="submit"> Log in</button>
+
+            <p> Forget password</p>
+        </div>
+    </form>
 </body>
 </html>
