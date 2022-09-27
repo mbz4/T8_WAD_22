@@ -21,6 +21,7 @@
   margin-top: 15px;
   margin-left: 27px;
  
+ 
 }
 
 
@@ -38,8 +39,8 @@ input[type=file]{
 
   background: #92989c;
   color: white;
-  border-style: outset;
-  border-color: #0d0d0d;
+  border-style: ridge;
+  border-color:  #797f82;
   border-radius: 2px;
   height: 70px;
   width: 110px;
