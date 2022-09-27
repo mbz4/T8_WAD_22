@@ -15,7 +15,7 @@
 font-family: 'Merriweather Sans', sans-serif;
   }
   img {
-    max-width: 15%;
+    max-width: 60px;
     height:auto;
     float: right;
     margin-right: 20px;
@@ -33,3 +33,18 @@ font-family: 'Merriweather Sans', sans-serif;
      
    }
  
+   .myFile{
+    display: none;
+  }
+   input[type=button]{
+    background: #0066A2;
+    color: white;
+    border-style: outset;
+    border-color: #0066A2;
+    height: 30px;
+    width: 110px;
+    font-size:medium;
+    font: bold15px arial,sans-serif;
+    text-shadow: none;
+    
+    }

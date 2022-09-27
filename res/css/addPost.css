@@ -7,8 +7,27 @@
 
 .align{
   display: flex;
-  margin: 60px;
+  
+  
 }
+
+.A{
+  margin-left: 60px;
+  margin-right: 60px;
+  margin-top: 60px;
+}
+
+.B{
+  margin-top: 15px;
+  margin-left: 27px;
+  
+
+
+
+}
+
+
+
 input[type=file]{
   margin-left: 20px;
   height: 30px;
@@ -16,14 +35,15 @@ input[type=file]{
   font-size:medium;
   
 }
-.myFile{
-  display: none;
-}
+
 .LableFile{
+
+
   background: #92989c;
   color: white;
   border-style: outset;
   border-color: #0d0d0d;
+  border-radius: 2px;
   height: 70px;
   width: 110px;
   font: bold15px arial,sans-serif;
@@ -31,15 +51,3 @@ input[type=file]{
   margin-left: 20px;
 }
 
-input[type=button] {
-  background: #0066A2;
-  color: white;
-  border-style: outset;
-  border-color: #0066A2;
-  height: 30px;
-  width: 110px;
-  font-size:medium;
-  font: bold15px arial,sans-serif;
-  text-shadow: none;
-  
-  }
