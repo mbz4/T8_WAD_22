@@ -1,4 +1,10 @@
-.container{
- background-color: grey;
- text-align: center;
+#textbox{
+ height: auto;
+ width: 12em;
+}
+
+.align{
+  display: flex;
+  margin: 60px;
+
 }

@@ -6,7 +6,8 @@
   }
 
   .header >div{
-    flex-basis: 110%;
+    flex-basis: 100%;
+    margin-left: 20px;
   }
 
   h3{
@@ -14,8 +15,22 @@
 font-family: 'Merriweather Sans', sans-serif;
   }
   img {
-    max-width: 10%;
+    max-width: 15%;
     height:auto;
     float: right;
+    margin-right: 20px;
   }
+
+  .container{ 
+    text-align: center;
+   background-color: gray;
+    border-radius: 20px;
+    background-clip: content-box;
+    
+    height: 20em;
+     width: 20em; 
+     margin-left: auto;
+     margin-right: auto
+     
+   }
  
