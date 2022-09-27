@@ -1,10 +1,26 @@
 #textbox{
- height: auto;
+ margin-top: 20px;
+ margin-left: 20px;
+ height: 80px;
  width: 12em;
 }
 
 .align{
   display: flex;
   margin: 60px;
-
 }
+input[type=file]{
+  margin-left: 20px;
+}
+
+input[type=button] {
+  background: #0066A2;
+  color: white;
+  border-style: outset;
+  border-color: #0066A2;
+  height: 30px;
+  width: 110px;
+  font: bold15px arial,sans-serif;
+  text-shadow: none;
+  
+  }
