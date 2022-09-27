@@ -9,6 +9,17 @@
     flex-basis: 100%;
     margin-left: 20px;
   }
+  .footer{
+    border-radius: 15px;
+    background: #dedcdc;
+    padding: 5px;
+    position: fixed;
+    
+    right: 2.9;
+    bottom: 0;
+    width: 98.5%;
+    text-align: center;
+  }
 
   h3{
     font-family: 'Dancing Script', cursive;
@@ -25,12 +36,17 @@ font-family: 'Merriweather Sans', sans-serif;
     text-align: center;
     background-color: #dedcdc;
     border-radius: 25px;
-
+    margin-top: 60px;
     height: 20em;
      width: 20em; 
      margin-left: auto;
      margin-right: auto
      
+   }
+
+   .post{
+    margin-top: 10px;
+    margin-bottom: 20px;
    }
  
    .myFile{
