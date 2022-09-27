@@ -1,6 +1,6 @@
 .header {
     border-radius: 15px;
-    background: gray;
+    background: #dedcdc;
     padding: 5px;
     display: flex;
   }
@@ -23,7 +23,7 @@ font-family: 'Merriweather Sans', sans-serif;
 
   .container{ 
     text-align: center;
-    background-color: gray;
+    background-color: #dedcdc;
     border-radius: 25px;
 
     height: 20em;

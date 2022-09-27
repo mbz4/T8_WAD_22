@@ -11,6 +11,24 @@
 }
 input[type=file]{
   margin-left: 20px;
+  height: 30px;
+  width: 110px;
+  font-size:medium;
+  
+}
+.myFile{
+  display: none;
+}
+.LableFile{
+  background: #92989c;
+  color: white;
+  border-style: outset;
+  border-color: #0d0d0d;
+  height: 70px;
+  width: 110px;
+  font: bold15px arial,sans-serif;
+  text-shadow: none;
+  margin-left: 20px;
 }
 
 input[type=button] {
@@ -20,6 +38,7 @@ input[type=button] {
   border-color: #0066A2;
   height: 30px;
   width: 110px;
+  font-size:medium;
   font: bold15px arial,sans-serif;
   text-shadow: none;
   
