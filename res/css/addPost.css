@@ -49,3 +49,8 @@ input[type=file]{
   margin-left: 20px;
 }
 
+/* Pseudo-class selector */
+.nav a:hover {
+  background-color: #7ebeb6;
+  color: #092747;
+}

@@ -1,72 +1,72 @@
 .header {
-    border-radius: 15px;
-    background: #dedcdc;
-    padding: 5px;
-    display: flex;
-    
-    font-family: 'Dancing Script', cursive;
-    font-family: 'Merriweather Sans', sans-serif;
-  }
-
-  .header >div{
-    flex-basis: 100%;
-    margin-left: 20px;
-  }
+  border-radius: 15px;
+  background: #dedcdc;
+  padding: 5px;
+  display: flex;
   
-  .footer{
-    border-radius: 15px;
-    background: #dedcdc;
-    padding: 5px;
-    position: fixed;
-    
-    right: 2.9;
-    bottom: 0;
-    width: 98.5%;
-    text-align: center;
-    font-family: 'Dancing Script', cursive;
-    font-family: 'Merriweather Sans', sans-serif;
+  font-family: 'Dancing Script', cursive;
+  font-family: 'Merriweather Sans', sans-serif;
   }
 
-  img {
-    max-width: 60px;
-    height:auto;
-    float: right;
-    margin-right: 20px;
-  }
+.header > div{
+  flex-basis: 100%;
+  margin-left: 20px;
+}
+  
+.footer{
+  border-radius: 15px;
+  background: #dedcdc;
+  padding: 5px;
+  position: fixed;
+  
+  right: 2.9;
+  bottom: 0;
+  width: 98.5%;
+  text-align: center;
+  font-family: 'Dancing Script', cursive;
+  font-family: 'Merriweather Sans', sans-serif;
+}
 
-  .container{ 
-    text-align: center;
-    background-color: #dedcdc;
-    border-radius: 25px;
-    margin-top: 60px;
-    height: 20em;
-     width: 20em; 
-     margin-left: auto;
-     margin-right: auto;
-     font-family: 'Dancing Script', cursive;
-     font-family: 'Merriweather Sans', sans-serif;
-     
-   }
+img {
+  max-width: 60px;
+  height:auto;
+  float: right;
+  margin-right: 20px;
+}
 
-   .post{
-    margin-top: 10px;
-    margin-bottom: 20px;
-   }
- 
-   .myFile{
-    display: none;
-  }
-   input[type=button]{
-    background: #0066A2;
-    color: white;
-    border-style: outset;
-    border-color: #0066A2;
-    height: 30px;
-    width: 110px;
-    font-size:medium;
-    font: bold15px arial,sans-serif;
-    text-shadow: none;
-    }
+.container{ 
+  text-align: center;
+  background-color: #dedcdc;
+  border-radius: 25px;
+  margin-top: 60px;
+  height: 20em;
+  width: 20em; 
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Dancing Script', cursive;
+  font-family: 'Merriweather Sans', sans-serif;    
+}
+
+.post{
+margin-top: 0px;
+margin-bottom: 20px;
+}
+
+.myFile{
+  display: none;
+}
+
+input[type=button]{
+  background: #0066A2;
+  color: white;
+  border-style: outset;
+  border-color: #0066A2;
+  height: 30px;
+  width: 110px;
+  font-size:medium;
+  font: bold15px arial,sans-serif;
+  text-shadow: none;
+}
 
 /* Pseudo-class selector */
 .nav a:hover {
@@ -92,10 +92,54 @@ a {
 }
 
 .container_img {
-  float: left; 
-
+  float: left;
+  margin-left: 10px;
+  margin-top: 10px;
 }
 
-.center_img {
+.container_img_like_btn {
+  float: left;
+  margin-left: 20px;
+  margin-top: -30px;
+}
+
+.center_img > img{
   float: center;
+  max-width: 280px;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  margin-top: 10px;
+  padding: 10px;
+  height: 100%; /* Should be removed. Only for demonstration */
+  border-radius: 25px;
+}
+
+.left {
+  float: left;
+  width: 25%;
+}
+
+.right {
+  float: right;
+  width: 25%;
+}
+
+.middle {
+  width: 50%;
+  float: center;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
