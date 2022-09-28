@@ -3,12 +3,16 @@
     background: #dedcdc;
     padding: 5px;
     display: flex;
+    
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Merriweather Sans', sans-serif;
   }
 
   .header >div{
     flex-basis: 100%;
     margin-left: 20px;
   }
+  
   .footer{
     border-radius: 15px;
     background: #dedcdc;
@@ -19,12 +23,10 @@
     bottom: 0;
     width: 98.5%;
     text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Merriweather Sans', sans-serif;
   }
 
-  h3{
-    font-family: 'Dancing Script', cursive;
-font-family: 'Merriweather Sans', sans-serif;
-  }
   img {
     max-width: 60px;
     height:auto;
@@ -40,7 +42,9 @@ font-family: 'Merriweather Sans', sans-serif;
     height: 20em;
      width: 20em; 
      margin-left: auto;
-     margin-right: auto
+     margin-right: auto;
+     font-family: 'Dancing Script', cursive;
+     font-family: 'Merriweather Sans', sans-serif;
      
    }
 
@@ -62,5 +66,27 @@ font-family: 'Merriweather Sans', sans-serif;
     font-size:medium;
     font: bold15px arial,sans-serif;
     text-shadow: none;
-    
     }
+
+/* Pseudo-class selector */
+.nav a:hover {
+  background-color: #7ebeb6;
+  color: #092747;
+}
+
+ul {
+  list-style: none;
+  }
+
+li {
+  display: inline;
+}
+
+a {
+  color: #34495e;
+  text-decoration: none;
+  }
+
+.blue p {
+  color: #21a3f3f3;
+}
