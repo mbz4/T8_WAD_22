@@ -90,3 +90,12 @@ a {
 .blue p {
   color: #21a3f3f3;
 }
+
+.container_img {
+  float: left; 
+
+}
+
+.center_img {
+  float: center;
+}
