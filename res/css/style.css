@@ -140,9 +140,16 @@ a {
   float: center;
 }
 
-@media screen and (max-width: 360px){
-  .column{
+@media screen and (max-width: 460px){
+  .middle{
     width:100%;
+  }
+  .left {
+    display: none;
+  }
+  
+  .right {
+    display: none;
   }
 }
 /* Clear floats after the columns */
