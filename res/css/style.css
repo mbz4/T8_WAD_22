@@ -1,9 +1,9 @@
+
 .header {
   border-radius: 15px;
   background: #dedcdc;
   padding: 5px;
   display: flex;
-  
   font-family: 'Dancing Script', cursive;
   font-family: 'Merriweather Sans', sans-serif;
   }
@@ -19,7 +19,6 @@
   background: #dedcdc;
   padding: 5px;
   position: fixed;
-  
   right: 2.9;
   bottom: 0;
   width: 98.5%;
@@ -110,7 +109,6 @@ a {
   max-width: 280px;
 }
 
-
 * {
   box-sizing: border-box;
 }
@@ -118,6 +116,7 @@ a {
 /* Create three unequal columns that floats next to each other */
 .column {
   float: left;
+  column-span: all;
   margin-top: 10px;
   padding: 10px;
   height: 100%; /* Should be removed. Only for demonstration */
@@ -125,15 +124,16 @@ a {
 }
 
 .left {
-  display: flex;
-  flex-direction: column;
   float: left;
   width: 10%;
+  height: 100%;
+  go all the way down pls;
 }
 
 .right {
   float: right;
   width: 10%;
+  height: 100%;
 }
 
 .middle {
@@ -141,6 +141,11 @@ a {
   float: center;
 }
 
+@media screen and (max-width: 360px){
+  .column{
+    width:100%;
+  }
+}
 /* Clear floats after the columns */
 .row:after {
   content: "";
