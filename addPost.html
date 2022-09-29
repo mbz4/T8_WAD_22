@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="res/css/style.css">  
         <link rel="stylesheet" href="res/css/addPost.css"> 
         <title>Add Post</title>
@@ -15,44 +16,32 @@
                 <strong>Home</strong>
             </a>
         </div>
+        <div>
         <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" width="50" height="50"
         alt="blank-profile-picture-mystery-man" >
         </div>
     </header>
 
-    
-      <div class="container">
-       
-        
-        <form action="/action_page.php" >
+
+    <div class="container">
+        <form action="/action_page.php">
             <div class="align A">
-                
-            <div><p><label>Post body</label></p></div>
-            
-            <div><textarea id="textbox" >textarea</textarea></div>
-        </div>
+                <div><p><label>Post body</label></p></div>
+                <div><textarea id="textbox" >textarea</textarea></div>
+            </div>
          
              <!-- <input type="submit" value="Submit"> -->
             <div class="align B">
                 <div ><p>Select file</p></div>
-                <div >
-             <label class="LableFile">       
-            <form action="/action_page.php">
-            <input type="file" class="myFile" name="filename">
-            
-          </form>
-          Choose File
-        </label>
+                <div>
+                    <label class="LableFile">
+                    <input type="file" class="myFile" name="filename">
+                    Choose File
+                    </label>
+                </div>
             </div>
-        </div>
-    
-     <input type="button" value="Create post">
-        
-    </form>
-
-          
-
-    
-      </div>
+            <input type="button" value="Create post">
+        </form>
+    </div>
 </body>
 </html>
