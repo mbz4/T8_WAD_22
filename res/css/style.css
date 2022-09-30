@@ -49,7 +49,7 @@ img {
 
 .post{
 margin-top: 0px;
-margin-bottom: 20px;
+margin-bottom: 10px;
 }
 
 .myFile{
@@ -87,8 +87,13 @@ a {
   text-decoration: none;
   }
 
-/*Descendant Selector... for log in page... */
+/*Descendant Selector... for login page... */
 .blue p {
+  color: #21a3f3f3;
+}
+
+/*Adjacent Sibling Selector ... for login page*/
+div+p {
   color: #21a3f3f3;
 }
 
@@ -113,48 +118,39 @@ a {
   box-sizing: border-box;
 }
 
-/* Create three unequal columns that floats next to each other */
-.column {
-  float: left;
-  column-span: all;
-  margin-top: 10px;
-  padding: 10px;
-  height: 100%; /* Should be removed. Only for demonstration */
+#grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: auto;
+  
+}
+
+#column_left {
+  background-color:#ccc;
   border-radius: 25px;
+  margin-top: 10px;
 }
 
-.left {
-  float: left;
-  width: 10%;
-  height: 100%;
+#column_middle {
+  grid-column: 3 / 5;
 }
 
-.right {
-  float: right;
-  width: 10%;
-  height: 100%;
-}
-
-.middle {
-  width: 80%;
-  float: center;
+#column_right {
+  background-color:#ccc;
+  grid-column: span 1 / 7;
+  border-radius: 25px;
+  margin-top: 10px;
 }
 
 @media screen and (max-width: 460px){
-  .middle{
+  #column_middle{
     width:100%;
   }
-  .left {
+  #column_left {
     display: none;
   }
   
-  .right {
+  #column_right {
     display: none;
   }
-}
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
 }
