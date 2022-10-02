@@ -8,6 +8,9 @@
 .align{
   display: flex; 
 }
+.top{
+  margin-top: 60px;
+}
 .A{
   margin-left: 60px;
   margin-right: 60px;
@@ -15,11 +18,14 @@
 }
 
 
+
 .B{
   margin-top: 15px;
-  margin-left: 27px;
- 
- 
+  margin-left: 50px;
+}
+
+#pElment{
+  line-height: 0.5;
 }
 
 
