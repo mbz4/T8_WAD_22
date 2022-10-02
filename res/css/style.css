@@ -18,11 +18,12 @@
   border-radius: 15px;
   background: #dedcdc;
   padding: 5px;
-  position: fixed;
+  position: relative;
   right: 2.9;
   bottom: 0;
   width: 98.5%;
   text-align: center;
+  margin-top: 10px;
   font-family: 'Dancing Script', cursive;
   font-family: 'Merriweather Sans', sans-serif;
 }
@@ -39,7 +40,7 @@ img {
   background-color: #dedcdc;
   border-radius: 25px;
   margin-top: 60px;
-  height: 20em;
+  height: 22em;
   width: 20em; 
   margin-left: auto;
   margin-right: auto;
@@ -56,6 +57,28 @@ margin-bottom: 10px;
   display: none;
 }
 
+.mini_container {
+  text-align: center;
+  background-color: #dedcdc;
+  border-radius: 20px;
+  margin-top: 60px;
+  height: 10em;
+  width: 20em; 
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Dancing Script', cursive;
+  font-family: 'Merriweather Sans', sans-serif; 
+
+}
+
+/* General Sibling Selector */
+div ~ h5{
+  color: rgb(37, 43, 43);
+  text-align: right;
+  padding-top: 20px;
+  padding-right: 15px;
+
+}
 input[type=submit]{
   background: #0066A2;
   color: white;
@@ -103,7 +126,7 @@ div+p {
   margin-top: 10px;
 }
 
-#container_img_like_btn {
+.container_img_like_btn {
   float: left;
   margin-left: 20px;
   margin-top: -30px;
