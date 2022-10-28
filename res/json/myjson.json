@@ -2,8 +2,12 @@
     {
       "userId": 1,
       "id": 1,
+      "author": 1,
       "title": "Post 1",
-      "body": "Text and test here"
+      "date": "Sept 05, 2022",
+      "image": 1,
+      "body": "Text and test here",
+      "like_button": 1
     },
     {
       "userId": 1,
