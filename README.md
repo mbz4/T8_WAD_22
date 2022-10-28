@@ -6,3 +6,6 @@
 - Farnaz Baksh
 - Matevž Zorec
 - Mia Marta Heikla
+
+
+[using npoint for hosting our HW2 json](https://www.npoint.io/docs/d87cf4101f83b3cabd7f)
