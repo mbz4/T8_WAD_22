@@ -54,9 +54,9 @@
       "email": "john.doe@ut.ee",
       "profile_img": "res/images/me.png",
       "date": "Oct 15, 2022",
-      "center_img": "res/images/lateAutumn.jpeg",
+      "center_img": "",
       "center_img_caption": "",
-      "message": "Late Autumn!",
+      "message": "Insert joke here .-. \n or not",
       "like_button": "res/images/like_btn_icon.png"
     },
     {
@@ -90,9 +90,9 @@
       "email": "john.doe@ut.ee",
       "profile_img": "res/images/me.png",
       "date": "Oct 25, 2022",
-      "center_img": "",
+      "center_img": "res/images/lateAutumn.jpeg",
       "center_img_caption": "",
-      "message": "Insert joke here .-. \n or not",
+      "message": "Late Autumn!",
       "like_button": "res/images/like_btn_icon.png"
     },
     {
