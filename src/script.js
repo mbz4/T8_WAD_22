@@ -11,11 +11,12 @@ window.onload = function() {
     fetch('/res/json/myjson.json')
         .then((response) => response.json())
         .then(json => {
-            console.log(json);
+            //console.log(json);
 
             for (let i = 0; i < json.length; i++) {
+                console.log("post index: " + json[i].index);
                 /* 
-                POSTS TREE TEMPLATE: 
+                TREE TEMPLATE: each post has this layout
                     section 
                         div0 << class: mini_container OR container post
                             div1 << class: container_img
@@ -71,7 +72,7 @@ window.onload = function() {
                 p1.innerText = json[i].center_img_caption;
                 p2.innerText = json[i].message
                 
-                // append elements to section, following allocated tree structure
+                // append elements to section according to the TREE TEMPLATE
                 div0.appendChild(div1);
                 div1.appendChild(container_img);
                 div0.appendChild(date);
