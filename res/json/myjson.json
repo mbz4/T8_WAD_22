@@ -3,17 +3,24 @@
       "userId": 1,
       "id": 1,
       "author": "John Doe",
-      "email": "john.doe@ut.ee", 
-      "title": "Post 1",
-      "date": "Sept 05, 2022",
-      "image": 1,
-      "body": "Text and test here",
-      "like_button": 1
+      "email": "john.doe@ut.ee",
+      "profile_img": "res/images/me.png",
+      "date": "Sep 30, 2022",
+      "image_path": "res/images/autumn.jpeg",
+      "image_caption": "Autumn in Tartu 2022",
+      "message": "",
+      "like_button": true
     },
     {
       "userId": 1,
       "id": 2,
-      "title": "Post 2",
-      "body": "Hi\nHello\nBye"
+      "author": "John Doe",
+      "email": "john.doe@ut.ee",
+      "profile_img": "res/images/me.png",
+      "date": "Sep 28, 2022",
+      "image_path": "",
+      "image_caption": "",
+      "message": "Why is 6 afraid of 7? 🤔",
+      "like_button": true
     }
   ]
