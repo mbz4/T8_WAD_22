@@ -169,8 +169,8 @@ div+p {
 .sub-menu-wrap{
   position: absolute;
   top: 5%;
-  right: 3px;
-  width: 320px;
+  right: 0.5px;
+  width: 280px;
   max-height: 0px;
   overflow: hidden;
   transition: max-height 0.5s;
@@ -190,6 +190,7 @@ max-height: 400px;
 }
 .user-info h3{
   font-weight: 500;
+  
 }
 
 @media screen and (max-width: 460px){
