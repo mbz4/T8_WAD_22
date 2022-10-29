@@ -76,7 +76,7 @@ window.onload = function() {
                 div3.appendChild(img_button);
                 section.appendChild(div0);
 
-                document.body.appendChild(section);
+                column_middle.appendChild(section);
             }
 
         })
