@@ -168,19 +168,19 @@ div+p {
 
 .sub-menu-wrap{
   position: absolute;
-  top: 5%;
-  right: 0.5px;
-  width: 280px;
+  top: 55px;
+  right: 20px;
+  width: 230px;
   max-height: 0px;
   overflow: hidden;
-  transition: max-height 0.5s;
+  transition: max-height 0.25s;
 }
 .sub-menu-wrap.open-menu{
 max-height: 400px;
 }
 .sub-menu{
-  background: gray;
-  padding: 20px;
+  background: rgb(236, 236, 236);
+  padding: 10px;
   margin: 10px;
   border-radius: 15px;
 }
@@ -189,8 +189,8 @@ max-height: 400px;
   align-items: center;
 }
 .user-info h3{
-  font-weight: 500;
-  
+  font-weight: 250;
+  font-family: 'Courier New', sans-serif;
 }
 
 @media screen and (max-width: 460px){

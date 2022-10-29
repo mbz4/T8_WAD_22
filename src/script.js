@@ -1,20 +1,13 @@
 
 window.onload = function() {
-    /*fetch('https://jsonplaceholder.typicode.com/posts')
-        .then((response) => response.json())
-        .then(json => {
-            console.log(json);
-
-        })
-    */
-
+    //fetch('/res/json/myjson.json')
     fetch('/res/json/myjson.json')
         .then((response) => response.json())
         .then(json => {
             //console.log(json);
 
             for (let i = 0; i < json.length; i++) {
-                console.log("post index: " + json[i].index);
+                //console.log("post index: " + json[i].index); // post display troubleshoot aid
                 /* 
                 TREE TEMPLATE: each post has this layout
                     section 
@@ -84,6 +77,7 @@ window.onload = function() {
                 div0.appendChild(br2);
                 div0.appendChild(div3);
                 div3.appendChild(img_button);
+                
                 section.appendChild(div0);
 
                 // append generated tree to column middle
@@ -91,25 +85,60 @@ window.onload = function() {
             }
 
         })
-        /*
-        .catch(err => {
-            let errDiv = document.createElement("div");
-            errDiv.className = 'post';
-            errDiv.innerText = err;
-            document.body.appendChild(errDiv);
-            })
-        */
+
         .finally(() => {
+            // generate submenu
+            /*
+            TREE TEMPLATE:
+            div0 << class: sub-menu-wrap, id: subMenu
+                div1 << class: sub-menu
+                    div2 << class: user-info
+                        h3 << "John Doe"
+                    div3 << class: user-info
+                        h3 << "john.doe@ut.ee"
+                    div4 << class: user-info
+                        h3 << "logout"
+            */
+
+            let div0 = document.createElement("div");
+            div0.className = 'sub-menu-wrap';
+            div0.id = "subMenu";
+
+            let div1 = document.createElement("div");
+            div1.className = 'sub-menu';
+
+            let div2 = document.createElement("div");
+            div2.className = 'user-info';
+            let h3_1 = document.createElement("h3");
+            h3_1.innerText = "John Doe";
+            
+            let div3 = document.createElement("div");
+            div3.className = 'user-info';
+            let h3_2 = document.createElement("h3");
+            h3_2.innerText = "john.doe@ut.ee";
+            
+            let div4 = document.createElement("div");
+            div4.className = 'user-info';
+            let h3_3 = document.createElement("h3");
+            h3_3.innerText = "logout"
+
+            div0.appendChild(div1);
+            div1.appendChild(div2);
+            div2.appendChild(h3_1);
+            div1.appendChild(div3);
+            div3.appendChild(h3_2);
+            div1.appendChild(div4);
+            div4.appendChild(h3_3);
+            
+            menu.appendChild(div0);
+            
+            // append footer at end of body
             let footer = document.createElement("footer");
-            //date = new Date().toLocaleString()
-            //footer.innerText = date;
             document.body.appendChild(footer);
             })
 
 }
 
-
-let subMenu = document.getElementById("subMenu");
 function toggleMenu(){
-    subMenu.classList.toggle("open-menu");
-    }
+    document.getElementById("subMenu").classList.toggle("open-menu");
+}
