@@ -56,7 +56,7 @@
       "date": "Sep 28, 2022",
       "center_img": "",
       "center_img_caption": "",
-      "message": "Why is 6 afraid of 7? 🤔",
+      "message": "Insert joke here .-.",
       "like_button": "res/images/like_btn_icon.png"
     },
     {
@@ -96,27 +96,27 @@
       "like_button": "res/images/like_btn_icon.png"
     },
     {
-      "userId": 1,
+      "userId": 2,
       "index": 9,
-      "author": "John Doe",
-      "email": "john.doe@ut.ee",
+      "author": "Shelly White",
+      "email": "shelly.white@ut.ee",
       "profile_img": "res/images/me.png",
       "date": "Sep 28, 2022",
       "center_img": "",
       "center_img_caption": "",
-      "message": "Why is 6 afraid of 7? 🤔",
+      "message": "How many programmers does it take to change a lightbulb?",
       "like_button": "res/images/like_btn_icon.png"
     },
     {
-      "userId": 1,
+      "userId": 2,
       "index": 10,
-      "author": "John Doe",
-      "email": "john.doe@ut.ee",
+      "author": "Shelly White",
+      "email": "shelly.white@ut.ee",
       "profile_img": "res/images/me.png",
-      "date": "Sep 28, 2022",
+      "date": "Oct 29, 2022",
       "center_img": "",
       "center_img_caption": "",
-      "message": "Why is 6 afraid of 7? 🤔",
+      "message": "None ... It’s a hardware problem.",
       "like_button": "res/images/like_btn_icon.png"
     }
   ]

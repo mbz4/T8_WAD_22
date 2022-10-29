@@ -120,7 +120,13 @@ window.onload = function() {
             let div4 = document.createElement("div");
             div4.className = 'user-info';
             let h3_3 = document.createElement("h3");
-            h3_3.innerText = "logout"
+            //h3_3.innerText = "logout";
+            //h3_3.id = "logout";
+            let a_logout = document.createElement("a");
+            a_logout.href = "login.html";
+            a_logout.innerText="logout";
+            //h3_3.href = "login.html";
+            //h3_3.setAttribute("href", "login.html");
 
             div0.appendChild(div1);
             div1.appendChild(div2);
@@ -129,9 +135,12 @@ window.onload = function() {
             div3.appendChild(h3_2);
             div1.appendChild(div4);
             div4.appendChild(h3_3);
-            
+            h3_3.appendChild(a_logout);
+
             menu.appendChild(div0);
             
+            //logout_link = document.getElementById("logout");
+            //logout_link.setAttribute("href", "login.html");
             // append footer at end of body
             let footer = document.createElement("footer");
             document.body.appendChild(footer);
@@ -141,4 +150,6 @@ window.onload = function() {
 
 function toggleMenu(){
     document.getElementById("subMenu").classList.toggle("open-menu");
+    //logout_link = document.getElementById("logout");
+    //document.getElementById("logout").setAttribute("href", "login.html");
 }
