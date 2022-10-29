@@ -2,7 +2,8 @@
     {
       "userId": 1,
       "id": 1,
-      "author": 1,
+      "author": "John Doe",
+      "email": "john.doe@ut.ee", 
       "title": "Post 1",
       "date": "Sept 05, 2022",
       "image": 1,

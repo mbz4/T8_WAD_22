@@ -1,14 +1,14 @@
-/*
+
 window.onload = function() {
-    fetch('https://jsonplaceholder.typicode.com/posts')
+    /*fetch('https://jsonplaceholder.typicode.com/posts')
         .then((response) => response.json())
         .then(json => {
             console.log(json);
 
         })
-} */
+    */
 
-fetch('../../../res/json/myjson.json')
+    fetch('../../../res/json/myjson.json')
         .then((response) => response.json())
         .then(json => {
             console.log(json);
