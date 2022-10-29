@@ -15,32 +15,39 @@ window.onload = function() {
 
             for (let i = 0; i < json.length; i++) {
                 /* 
-                elements: 
-                    section( 
-                        div0(
-                            div1(img - profile), 
-                            h5, 
+                POSTS TREE TEMPLATE: 
+                    section 
+                        div0 << class: mini_container OR container post
+                            div1 << class: container_img
+                                img << profile_img
+                            h5, << date
                             br1, 
-                            div2(img - content), 
-                            p, 
+                            div2 << class: center_img
+                                img << center_img
+                            p1, << center_img_caption
+                            p2, << message
                             br2, 
-                            div3(img - like btn)
-                            )
-                        )
+                            div3 << class: container_img_like_btn
+                                img << like_button
                 */
+                // create elements, imgs
                 let section = document.createElement("section");
                 let div0 = document.createElement("div");
+
                 let div1 = document.createElement("div");
+                let container_img = new Image(50, 50);
+                
                 let date = document.createElement("h5");
                 let br1 = document.createElement("br");
-                let div2 = document.createElement("div");
-                let p = document.createElement("p");
-                let br2 = document.createElement("br");
-                let div3 = document.createElement("div");
                 
-                // images
-                let container_img = new Image(50, 50);
+                let div2 = document.createElement("div");
                 let center_img = new Image();
+                
+                let p1 = document.createElement("p");
+                let p2 = document.createElement("p");
+                let br2 = document.createElement("br");
+                
+                let div3 = document.createElement("div");
                 let img_button = new Image(30, 30);
                 
                 // image paths
@@ -49,8 +56,8 @@ window.onload = function() {
                 img_button.src = json[i].like_button;
 
                 // assign styles
-                if (json[i].center_img.length == 0) {
-                    div0.className = 'mini_container';
+                if (json[i].center_img.length == 0) { //check if there is a center image
+                    div0.className = 'mini_container'; // assign different class if there is/isnt
                 } else {
                     div0.className = 'container post';
                 }
@@ -60,22 +67,25 @@ window.onload = function() {
                 
                 // assign content from json
                 date.innerText = json[i].date;
-                p.innerText = json[i].message;
+                //div1.innerText = json[i].center_img_caption;
+                p1.innerText = json[i].center_img_caption;
+                p2.innerText = json[i].message
                 
-
-                // append elements to section
+                // append elements to section, following allocated tree structure
                 div0.appendChild(div1);
                 div1.appendChild(container_img);
                 div0.appendChild(date);
                 div0.appendChild(br1);
                 div0.appendChild(div2);
                 div2.appendChild(center_img);
-                div0.appendChild(p);
+                div0.appendChild(p1);
+                div0.appendChild(p2);
                 div0.appendChild(br2);
                 div0.appendChild(div3);
                 div3.appendChild(img_button);
                 section.appendChild(div0);
 
+                // append generated tree to column middle
                 column_middle.appendChild(section);
             }
 
