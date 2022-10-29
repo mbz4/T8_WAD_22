@@ -6,10 +6,10 @@
       "email": "john.doe@ut.ee",
       "profile_img": "res/images/me.png",
       "date": "Sep 30, 2022",
-      "image_path": "res/images/autumn.jpeg",
-      "image_caption": "Autumn in Tartu 2022",
+      "center_img": "res/images/autumn.jpeg",
+      "center_img_caption": "Autumn in Tartu 2022",
       "message": "",
-      "like_button": true
+      "like_button": "res/images/like_btn_icon.png"
     },
     {
       "userId": 1,
@@ -18,10 +18,10 @@
       "email": "john.doe@ut.ee",
       "profile_img": "res/images/me.png",
       "date": "Sep 28, 2022",
-      "image_path": "",
-      "image_caption": "",
+      "center_img": "",
+      "center_img_caption": "",
       "message": "Why is 6 afraid of 7? 🤔",
-      "like_button": true
+      "like_button": "res/images/like_btn_icon.png"
     },
     {
       "userId": 1,
@@ -30,10 +30,10 @@
       "email": "john.doe@ut.ee",
       "profile_img": "res/images/me.png",
       "date": "Sep 28, 2022",
-      "image_path": "",
-      "image_caption": "",
+      "center_img": "",
+      "center_img_caption": "",
       "message": "Because 7 '8' 9! 😂",
-      "like_button": false
+      "like_button": "res/images/like_btn_icon.png"
     },
     {
       "userId": 1,
@@ -42,10 +42,10 @@
       "email": "john.doe@ut.ee",
       "profile_img": "res/images/me.png",
       "date": "Sep 05, 2022",
-      "image_path": "res/images/sky_high.jpeg",
-      "image_caption": "#Blue Sky",
+      "center_img": "res/images/sky_high.jpeg",
+      "center_img_caption": "#Blue Sky",
       "message": "#Snowy Mountains",
-      "like_button": true
+      "like_button": "res/images/like_btn_icon.png"
     },
     {
       "userId": 1,
@@ -54,10 +54,10 @@
       "email": "john.doe@ut.ee",
       "profile_img": "res/images/me.png",
       "date": "Sep 28, 2022",
-      "image_path": "",
-      "image_caption": "",
+      "center_img": "",
+      "center_img_caption": "",
       "message": "Why is 6 afraid of 7? 🤔",
-      "like_button": true
+      "like_button": "res/images/like_btn_icon.png"
     },
     {
       "userId": 1,
@@ -66,10 +66,10 @@
       "email": "john.doe@ut.ee",
       "profile_img": "res/images/me.png",
       "date": "Aug 30, 2022",
-      "image_path": "",
-      "image_caption": "",
+      "center_img": "",
+      "center_img_caption": "",
       "message": "Insert joke here .-.",
-      "like_button": false
+      "like_button": "res/images/like_btn_icon.png"
     },
     {
       "userId": 1,
@@ -78,10 +78,10 @@
       "email": "john.doe@ut.ee",
       "profile_img": "res/images/me.png",
       "date": "Sep 28, 2022",
-      "image_path": "",
-      "image_caption": "",
+      "center_img": "",
+      "center_img_caption": "",
       "message": "Why is 6 afraid of 7? 🤔",
-      "like_button": true
+      "like_button": "res/images/like_btn_icon.png"
     },
     {
       "userId": 1,
@@ -90,10 +90,10 @@
       "email": "john.doe@ut.ee",
       "profile_img": "res/images/me.png",
       "date": "Sep 28, 2022",
-      "image_path": "",
-      "image_caption": "",
+      "center_img": "",
+      "center_img_caption": "",
       "message": "Why is 6 afraid of 7? 🤔",
-      "like_button": true
+      "like_button": "res/images/like_btn_icon.png"
     },
     {
       "userId": 1,
@@ -102,10 +102,10 @@
       "email": "john.doe@ut.ee",
       "profile_img": "res/images/me.png",
       "date": "Sep 28, 2022",
-      "image_path": "",
-      "image_caption": "",
+      "center_img": "",
+      "center_img_caption": "",
       "message": "Why is 6 afraid of 7? 🤔",
-      "like_button": true
+      "like_button": "res/images/like_btn_icon.png"
     },
     {
       "userId": 1,
@@ -114,9 +114,9 @@
       "email": "john.doe@ut.ee",
       "profile_img": "res/images/me.png",
       "date": "Sep 28, 2022",
-      "image_path": "",
-      "image_caption": "",
+      "center_img": "",
+      "center_img_caption": "",
       "message": "Why is 6 afraid of 7? 🤔",
-      "like_button": true
+      "like_button": "res/images/like_btn_icon.png"
     }
   ]
