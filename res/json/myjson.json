@@ -17,7 +17,7 @@
       "author": "John Doe",
       "email": "john.doe@ut.ee",
       "profile_img": "res/images/me.png",
-      "date": "Sep 28, 2022",
+      "date": "Oct 1, 2022",
       "center_img": "",
       "center_img_caption": "",
       "message": "Why is 6 afraid of 7? 🤔",
@@ -29,7 +29,7 @@
       "author": "John Doe",
       "email": "john.doe@ut.ee",
       "profile_img": "res/images/me.png",
-      "date": "Sep 28, 2022",
+      "date": "Oct 1, 2022",
       "center_img": "",
       "center_img_caption": "",
       "message": "Because 7 '8' 9! 😂",
@@ -41,7 +41,7 @@
       "author": "John Doe",
       "email": "john.doe@ut.ee",
       "profile_img": "res/images/me.png",
-      "date": "Sep 05, 2022",
+      "date": "Oct 3, 2022",
       "center_img": "res/images/sky_high.jpeg",
       "center_img_caption": "#Blue Sky",
       "message": "#Snowy Mountains",
@@ -53,10 +53,10 @@
       "author": "John Doe",
       "email": "john.doe@ut.ee",
       "profile_img": "res/images/me.png",
-      "date": "Sep 28, 2022",
-      "center_img": "",
+      "date": "Oct 15, 2022",
+      "center_img": "res/images/lateAutumn.jpeg",
       "center_img_caption": "",
-      "message": "Insert joke here .-.",
+      "message": "Late Autumn!",
       "like_button": "res/images/like_btn_icon.png"
     },
     {
@@ -65,10 +65,10 @@
       "author": "John Doe",
       "email": "john.doe@ut.ee",
       "profile_img": "res/images/me.png",
-      "date": "Aug 30, 2022",
+      "date": "Oct 20, 2022",
       "center_img": "",
       "center_img_caption": "",
-      "message": "Insert joke here .-.",
+      "message": "Q: What do computers and air conditioners have in common? 🤔",
       "like_button": "res/images/like_btn_icon.png"
     },
     {
@@ -77,10 +77,10 @@
       "author": "John Doe",
       "email": "john.doe@ut.ee",
       "profile_img": "res/images/me.png",
-      "date": "Sep 28, 2022",
+      "date": "Oct 20, 2022",
       "center_img": "",
       "center_img_caption": "",
-      "message": "Why is 6 afraid of 7? 🤔",
+      "message": "A: They both become useless when you open windows 😉",
       "like_button": "res/images/like_btn_icon.png"
     },
     {
@@ -89,10 +89,10 @@
       "author": "John Doe",
       "email": "john.doe@ut.ee",
       "profile_img": "res/images/me.png",
-      "date": "Sep 28, 2022",
+      "date": "Oct 25, 2022",
       "center_img": "",
       "center_img_caption": "",
-      "message": "Why is 6 afraid of 7? 🤔",
+      "message": "Insert joke here .-. \n or not",
       "like_button": "res/images/like_btn_icon.png"
     },
     {
@@ -101,10 +101,10 @@
       "author": "Shelly White",
       "email": "shelly.white@ut.ee",
       "profile_img": "res/images/me.png",
-      "date": "Sep 28, 2022",
+      "date": "Oct 29, 2022",
       "center_img": "",
       "center_img_caption": "",
-      "message": "How many programmers does it take to change a lightbulb?",
+      "message": "How many programmers does it take to change a lightbulb? 💡",
       "like_button": "res/images/like_btn_icon.png"
     },
     {
@@ -116,7 +116,7 @@
       "date": "Oct 29, 2022",
       "center_img": "",
       "center_img_caption": "",
-      "message": "None ... It’s a hardware problem.",
+      "message": "None ... \n It’s a hardware problem. 🤓",
       "like_button": "res/images/like_btn_icon.png"
     }
   ]
