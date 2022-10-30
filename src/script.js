@@ -1,7 +1,7 @@
 // json file validated here: https://jsonformatter.curiousconcept.com/#
 window.onload = function() {
     //fetch('/res/json/myjson.json')
-    fetch('http://myjson.dit.upm.es/api/bins/4p0i') //https://myjson.dit.upm.es/4p0i hosted here
+    fetch('http://myjson.dit.upm.es/api/bins/605q') //https://myjson.dit.upm.es/4p0i hosted here
     // https://api.npoint.io/d87cf4101f83b3cabd7f alternative
         .then((response) => response.json())
         .then(json => {
@@ -149,7 +149,7 @@ window.onload = function() {
 
 }
 
-function toggleMenu(){
+function toggleMenu(){ //onclick callback to open the menu
     document.getElementById("subMenu").classList.toggle("open-menu");
     //logout_link = document.getElementById("logout");
     //document.getElementById("logout").setAttribute("href", "login.html");
