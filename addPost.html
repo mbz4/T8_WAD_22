@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="res/css/style.css">  
         <link rel="stylesheet" href="res/css/addPost.css"> 
         <link rel="icon" href="res/images/favicon.ico">
+        <script type="text/javascript" src="src/addPost_script.js"></script>
         <title>Add Post</title>
     </head>
 
@@ -16,9 +17,9 @@
                 <li><a href="index.html"> <strong>Home</strong></a></li>
             </ul>
         </div>
-        <div>
+        <div id="menu">
         <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" width="50" height="50"
-        alt="blank-profile-picture-mystery-man" >
+        alt="blank-profile-picture-mystery-man" onclick=toggleMenu() />
         </div>
     </header>
 
@@ -45,6 +46,5 @@
             <input type="submit" value="Create post">
         </form>
     </div>
-    <script type="text/javascript" src="src/script.js"></script>
 </body>
 </html>
