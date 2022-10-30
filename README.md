@@ -7,6 +7,7 @@
 - Matevž Zorec
 - Mia Marta Heikla
 
+<base target="_blank">  
 [used W3C for markup validation](https://validator.w3.org/#validate_by_upload)  
 [used jsonformatter to validate](https://jsonformatter.curiousconcept.com/)  
 [host json file on myjson](https://myjson.dit.upm.es/)  
