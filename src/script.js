@@ -154,3 +154,4 @@ function toggleMenu(){
     //logout_link = document.getElementById("logout");
     //document.getElementById("logout").setAttribute("href", "login.html");
 }
+
