@@ -2,6 +2,7 @@
 window.onload = function() {
     //fetch('/res/json/myjson.json')
     fetch('http://myjson.dit.upm.es/api/bins/4p0i') //https://myjson.dit.upm.es/4p0i hosted here
+    // https://api.npoint.io/d87cf4101f83b3cabd7f alternative
         .then((response) => response.json())
         .then(json => {
             //console.log(json);
