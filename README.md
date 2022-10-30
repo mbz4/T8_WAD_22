@@ -7,7 +7,7 @@
 - Matevž Zorec
 - Mia Marta Heikla
 
-[used W3C for markup validation](https://validator.w3.org/#validate_by_upload)
-[used jsonformatter to validate](https://jsonformatter.curiousconcept.com/)
-[host json file on myjson](https://myjson.dit.upm.es/)
-[considered npoint for json hosting](https://www.npoint.io/docs/d87cf4101f83b3cabd7f)
+[used W3C for markup validation](https://validator.w3.org/#validate_by_upload)  
+[used jsonformatter to validate](https://jsonformatter.curiousconcept.com/)  
+[host json file on myjson](https://myjson.dit.upm.es/)  
+[considered npoint for json hosting](https://www.npoint.io/docs/d87cf4101f83b3cabd7f)  
