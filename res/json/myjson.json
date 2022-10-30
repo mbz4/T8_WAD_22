@@ -57,7 +57,7 @@
       "center_img": "",
       "center_img_caption": "",
       "message": "Insert joke here .-. \n or not",
-      "like_button": "res/images/like_btn_icon.png"
+      "like_button": "res/images/unlike_btn_icon.png"
     },
     {
       "userId": 1,
@@ -93,7 +93,7 @@
       "center_img": "res/images/lateAutumn.jpeg",
       "center_img_caption": "",
       "message": "Late Autumn!",
-      "like_button": "res/images/like_btn_icon.png"
+      "like_button": "res/images/unlike_btn_icon.png"
     },
     {
       "userId": 2,
