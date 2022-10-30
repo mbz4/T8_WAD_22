@@ -1,4 +1,4 @@
-
+// json file validated here: https://jsonformatter.curiousconcept.com/#
 window.onload = function() {
     //fetch('/res/json/myjson.json')
     fetch('http://myjson.dit.upm.es/api/bins/4p0i') //https://myjson.dit.upm.es/4p0i hosted here
