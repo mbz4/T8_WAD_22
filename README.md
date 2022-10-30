@@ -1,13 +1,14 @@
 # T8_WAD_22 - Team 8 / Group AT
 ##### Project Repo for LTAT.05.004 - Web Application Development 
-###### Autumn Semester 2022/23
+###### Autumn Semester 2022/23  
+
+<base target="_blank">  
 
 ###### Group Members
 - Farnaz Baksh
 - Matevž Zorec
 - Mia Marta Heikla
 
-<base target="_blank">  
 [used W3C for markup validation](https://validator.w3.org/#validate_by_upload)  
 [used jsonformatter to validate](https://jsonformatter.curiousconcept.com/)  
 [host json file on myjson](https://myjson.dit.upm.es/)  
