@@ -1,5 +1,5 @@
 <template>
-  <nav>
+  <nav class="header">
     <router-link to="/">Main</router-link> |
     <router-link to="/signup">Signup</router-link>
   </nav>
