@@ -1,3 +1,6 @@
+<!-- The header should be a component that appears on both “pages” of your App, 
+and it should include navigation links/routes to both pages -->
+
 <template>
     <nav class="header">
         <router-link to="/">Main</router-link> |
@@ -28,8 +31,28 @@
   position: fixed;
   width: 100%;
   top: 0;
-  
   }
+
+  #app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  }
+
+  nav {
+    padding: 30px;
+  }
+
+  nav a {
+    font-weight: bold;
+    color: #2c3e50;
+  }
+
+  nav a.router-link-exact-active {
+    color: #42b983;
+  } 
   
   </style>
   

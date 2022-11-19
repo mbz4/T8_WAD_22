@@ -1,8 +1,8 @@
 <template>
-  <nav class="header">
+  <!-- <nav>
     <router-link to="/">Main</router-link> |
     <router-link to="/signup">Signup</router-link>
-  </nav>
+  </nav> -->
   <router-view/>
 </template> 
 
