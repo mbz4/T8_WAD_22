@@ -1,10 +1,10 @@
 <template>
   <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <router-link to="/">Main</router-link> |
+    <router-link to="/signup">Signup</router-link>
   </nav>
   <router-view/>
-</template>
+</template> 
 
 <style>
 #app {
