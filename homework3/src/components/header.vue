@@ -6,7 +6,7 @@ and it should include navigation links/routes to both pages -->
         <router-link to="/">Main</router-link> |
         <router-link to="/signup">Signup</router-link>
     </nav>
-    <router-view/>
+    <!-- <router-view/> -->
 </template>
   
   <script>
