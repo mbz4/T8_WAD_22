@@ -6,8 +6,8 @@ export default createStore({
             // productList should be placed here
             productList:[
                 {id: 1, author: "John Doe", message: "Autumn in Tartu 2022", img: "../autumn.jpeg", date: "Sep 30, 2022", like: 0},
-                {id: 2, author: "John Doe", message: "Why is 6 afraid of 7? 🤔 \n Because 7 '8' 9! 😂", date: "Oct 1, 2022", like: 22},
-                {id: 3, author: "John Doe", message: "#Blue Sky \n #Snowy Mountains", img: "../sky_high.jpeg", date: "Oct 11, 2022", like: 13},
+                {id: 2, author: "John Doe", message: "#Blue Sky \n #Snowy Mountains", img: "../sky_high.jpeg", date: "Oct 11, 2022", like: 13},
+                {id: 3, author: "John Doe", message: "Why is 6 afraid of 7? 🤔 \n Because 7 '8' 9! 😂", date: "Oct 1, 2022", like: 22},
                 {id: 4, author: "John Doe", message: "Late Autumn!", img: "../lateAutumn.jpeg", date: "Oct 30, 2022", like: 13},
                 {id: 5, author: "John Doe", message: "Q: What do computers and air conditioners have in common? 🤔", date: "Nov 1, 2022", like: 13},
                 {id: 6, author: "John Doe", message: "A: They both become useless when you open windows 😉", date: "Nov 5, 2022", like: 13},
