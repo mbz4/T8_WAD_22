@@ -15,7 +15,7 @@
 
 // @ is an alias to /src
 import getData from "@/components/getData.vue";
-import Header from "./Header.vue" ;
+import Header from "./header.vue" ;
 import Footer from "./footer.vue"
 
 export default {
