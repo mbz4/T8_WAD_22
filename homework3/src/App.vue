@@ -3,8 +3,19 @@
     <router-link to="/">Main</router-link> |
     <router-link to="/signup">Signup</router-link>
   </nav> -->
-  <router-view/>
+  <div>
+    <router-view/>
+  <Header/>
+  </div>
+  
 </template> 
+
+
+
+<script setup>
+ import Header from '@/components/header.vue';
+</script>
+
 
 <style>
 #app {

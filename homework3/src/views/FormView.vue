@@ -2,7 +2,8 @@
 
 
 <div>  
-   <Header/>
+   <header/>
+
   <div>
     
     <form @submit.prevent ="validateForm">
@@ -17,21 +18,22 @@
   </div>
   </form>
   
-  </div>  </div>
+  </div> 
+ </div>
 
 
  
 </template>
   
   <script>
-  import Header from "@/components/header.vue" 
-import header from '../components/header.vue';
+  
+  import header from '../components/header.vue';
   
 
   export default {
   components: { header },
   name: "FormView", 
-  Header,
+  header,
   
   
   data: function() {

@@ -11,7 +11,7 @@ and it should include navigation links/routes to both pages -->
   
   <script>
   export default {
-    name: 'Header',
+    name: 'header',
     props: {
       msg: String
     }
