@@ -29,7 +29,8 @@ and it should include navigation links/routes to both pages -->
   .Header {
     border-radius: 15px;
     background: #dedcdc;
-    padding: 5px;
+    padding: 15px;
+    padding-left: 45%;
     display: flex;
     font-family: 'Dancing Script', cursive;
     font-family: 'Merriweather Sans', sans-serif;
@@ -57,10 +58,6 @@ and it should include navigation links/routes to both pages -->
     font-weight: bold;
     color: #2c3e50;
   }
-
-  nav a.router-link-exact-active {
-    color: #42b983;
-  } 
   
   </style>
   
