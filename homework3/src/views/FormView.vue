@@ -2,7 +2,7 @@
 
 
 <div>  
-   <header/>
+   <Header/>
 
   <div>
     
