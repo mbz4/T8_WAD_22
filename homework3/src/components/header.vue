@@ -2,7 +2,7 @@
 and it should include navigation links/routes to both pages -->
 
 <template>
-    <nav class="header">
+    <nav class="Header">
         <router-link to="/">Main</router-link> |
         <router-link to="/signup">Signup</router-link>
     </nav>
@@ -11,7 +11,7 @@ and it should include navigation links/routes to both pages -->
   
   <script>
   export default {
-    name: 'footer',
+    name: 'Header',
     props: {
       msg: String
     }
@@ -21,15 +21,15 @@ and it should include navigation links/routes to both pages -->
   <!-- Add "scoped" attribute to limit CSS to this component only -->
   <style scoped>
   
-  .header {
-  border-radius: 15px;
+  .Header {
+  border-radius: 12px;
   background: #dedcdc;
   padding: 5px;
   display: flex;
   font-family: 'Dancing Script', cursive;
   font-family: 'Merriweather Sans', sans-serif;
   position: fixed;
-  width: 100%;
+  width: 98%;
   top: 0;
   }
 
