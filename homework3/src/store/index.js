@@ -1,54 +1,55 @@
 import { createStore } from 'vuex'
 
-export default createStore({
-    strict: true,
+// inspiration from: https://medium.com/@esmaydogdu/vuex-fetch-b0e8472e7676
 
-    state: {
-        likeList:[
-            {index: 1, author: "Charlotte Bronte", book: "Jane Eyre", goodreads: "4.1/5", price: 20},
-            {index: 2, author: "Margaret Mitchell", book: "Gone with the Wind", goodreads: "4.3/5", price: 22},
-            {index: 3, author: "Anthony Burgess", book: "A Clockwork Orange", goodreads: "4/5", price: 13},
-            {index: 4, author: "Fyodor Dostoevsky" , book: "Crime and Punishment", goodreads: "4.2/5", price: 18}
-            ]
+export default createStore({
+  strict: true,
+  state: {
+    postsList:[]
+  },
+  getters: {
+    // .map is a higher-order function that creates a new array populated with the results of
+    // calling a provided function on every element in the calling array. – Lecture 5
+    productListsale: state => {
+      var likeList = state.likeList.map(product => {
+          return {
+              index: product.index,
+              author: product.author,
+              price: product.price / 2,
+              book: product.book,
+              goodreads: product.goodreads
+          }
+      });
+      return likeList
     },
-    getters: {
-        // .map is a higher-order function that creates a new array populated with the results of
-        // calling a provided function on every element in the calling array. – Lecture 5
-        productListsale: state => {
-            var likeList = state.likeList.map(product => {
-                return {
-                    index: product.index,
-                    author: product.author,
-                    price: product.price / 2,
-                    book: product.book,
-                    goodreads: product.goodreads
-                }
-            });
-            return likeList
-        },
+    countries(state) {
+      return state.countries;
+    }
+  },
+  mutations: {
+    setCountries(state, countries) {
+      state.countries = countries;
+    },  
+    //The .forEach() method executes a callback function on each of the elements in an array in order. – Lecture 5
+    IncreasePrice: state => {
+      state.likeList.forEach(product => {
+      product.price += 1;
+      })
     },
-    mutations: {
-        //The .forEach() method executes a callback function on each of the elements in an array in order. – Lecture 5
-        IncreasePrice: state => {
-            state.likeList.forEach(product => {
-                product.price += 1;
-            })
-        },
-        DecreasePrice: state => {
-            state.likeList.forEach(product => {
-                product.price -= 1;
-            })
-        }
+    DecreasePrice: state => {
+      state.likeList.forEach(product => {
+        product.price -= 1;
+      })
+    }
+  },
+  actions: {
+    fetchAllCountries(context) {
+      return fetch("https://api.npoint.io/054c02512e7ae401d479")
+      .then((response) => response.json())
+      .then((data) => {
+        context.commit("setCountries", data);
+      })
+      .catch((err) => console.error(err));
     },
-    actions: {
-        IncreasePriceAct: act => {
-            setTimeout(function() {
-                act.commit("IncreasePrice")
-            }, 1000)
-        },
-        DecreasePriceAct: act => {
-            setTimeout(function() {
-                act.commit("DecreasePrice")
-            }, 1000)
-        }}
-    })
+  }
+})

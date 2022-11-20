@@ -43,10 +43,26 @@
 
 <script>
 
+// export default {
+//     name: "getData",
+//     props: ["posts"]
+// }
+
+import { mapActions, mapGetters } from "vuex";
 export default {
-    name: "getData",
-    props: ["posts"]
-}
+    //   computed: {
+    //     ...mapGetters(["countries"]),   
+    computed: {
+    countries () {
+        return this.$store.getters.countries
+    }},
+  methods: {
+    ...mapActions(["fetchAllCountries"]),
+  },
+  created() {
+    this.fetchAllCountries();
+  },
+};
 </script>
 
 <style scoped>
