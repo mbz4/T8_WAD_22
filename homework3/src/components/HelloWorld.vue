@@ -1,7 +1,10 @@
 <template>
-  <Header />
-  <get-data :posts="posts"/>
-  <Footer/>
+  <div>
+    <Header />
+    <get-data :posts="posts"/>
+    <Footer/>
+  </div>
+  
 
 </template>
 

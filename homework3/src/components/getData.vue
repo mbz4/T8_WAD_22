@@ -20,6 +20,7 @@
                 br2, 
                 div3 << class: container_img_like_btn
                     img << like_button  -->
+                    <div>
     <section v-for="post in posts" :key="post.index">
         <div class="container post">
             <div class="container_img"> 
@@ -38,31 +39,17 @@
             </div>
         </div>
     </section>
+</div>
+
 </template>
 
 
 <script>
 
-// export default {
-//     name: "getData",
-//     props: ["posts"]
-// }
-
-import { mapActions, mapGetters } from "vuex";
 export default {
-    //   computed: {
-    //     ...mapGetters(["countries"]),   
-    computed: {
-    countries () {
-        return this.$store.getters.countries
-    }},
-  methods: {
-    ...mapActions(["fetchAllCountries"]),
-  },
-  created() {
-    this.fetchAllCountries();
-  },
-};
+    name: "getData",
+    props: ["posts"]
+}
 </script>
 
 <style scoped>
