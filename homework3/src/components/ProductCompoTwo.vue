@@ -16,8 +16,8 @@
             <h5> {{product.date}}</h5>
             <br>
             <div class="center_img">
-                <img src="../assets/logo.png">
-            <!-- <img :src="post.center_img"> -->
+                <!-- <img src="../assets/logo.png"> -->
+                 <img :src="product.img"/>
             </div>
             <p> {{product.message}} </p>
             <br>
