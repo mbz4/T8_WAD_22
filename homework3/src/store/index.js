@@ -5,22 +5,16 @@ export default createStore({
     state: {
             // productList should be placed here
             productList:[
-                {id: 1, author: "John Doe", message: "Autumn in Tartu 2022", date: "Sep 30, 2022", like: 0},
-                {id: 2, author: "Margaret Mitchell", message: "Gone with the Wind", date: "4.3/5", like: 22},
-                {id: 3, author: "Anthony Burgess", message: "A Clockwork Orange", date: "4/5", like: 13},
-                {id: 4, author: "Fyodor Dostoevsky" , message: "Crime and Punishment", date: "4.2/5", like: 18}
-                // {
-                //   "userId": 1,
-                //   "index": 1,
-                //   "author": "John Doe",
-                //   "email": "john.doe..ut.ee",
-                //   "profile_img": "../assets/me.png",
-                //   "date": "Sep 30, 2022",
-                //   "center_img": "../assets/autumn.jpeg",
-                //   "center_img_caption": "Autumn in Tartu 2022",
-                //   "message": "",
-                //   "like_button": "../assets/like_btn_icon.png"
-                // }
+                {id: 1, author: "John Doe", message: "Autumn in Tartu 2022", img: "../autumn.jpeg", date: "Sep 30, 2022", like: 0},
+                {id: 2, author: "Margaret Mitchell", message: "Gone with the Wind", img: "../autumn.jpeg", date: "Oct 1, 2022", like: 22},
+                {id: 3, author: "Anthony Burgess", message: "A Clockwork Orange", img: "../autumn.jpeg", date: "Oct 1, 2022", like: 13},
+                {id: 4, author: "Anthony Burgess", message: "A Clockwork Orange", img: "../autumn.jpeg", date: "Oct 1, 2022", like: 13},
+                {id: 5, author: "Anthony Burgess", message: "Because 7 '8' 9! 😂", img: "../autumn.jpeg", date: "Oct 1, 2022", like: 13},
+                {id: 6, author: "Anthony Burgess", message: "A Clockwork Orange", img: "../autumn.jpeg", date: "Oct 1, 2022", like: 13},
+                {id: 7, author: "Anthony Burgess", message: "A Clockwork Orange", img: "../autumn.jpeg", date: "Oct 1, 2022", like: 13},
+                {id: 8, author: "Anthony Burgess", message: "A Clockwork Orange", img: "../autumn.jpeg", date: "Oct 1, 2022", like: 13},
+                {id: 9, author: "Anthony Burgess", message: "A Clockwork Orange", img: "../autumn.jpeg", date: "Oct 1, 2022", like: 13},
+                {id: 10, author: "Anthony Burgess", message: "A Clockwork Orange", img: "../autumn.jpeg", date: "Oct 1, 2022", like: 13},                
                 ]
     },
   getters: {
@@ -34,7 +28,8 @@ export default createStore({
                    author: product.author,
                    like: product.like /2,
                    message: product.message,
-                   date: product.date
+                   date: product.date,
+                   img: product.img
                }
            });
            return productListsale

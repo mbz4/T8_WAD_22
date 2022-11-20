@@ -46,13 +46,13 @@
      /* Validate password */
      validateForm(){
      console.log('signup is submitted');
-     this.validatePassword = (this.password.length <8 || this.password> 15)? 'password must be between 8-15 chars':''
-     console.log(this.validatePassword);
+    //  this.validatePassword = (this.password.length <8 || this.password> 15)? 'password must be between 8-15 chars':''
+    //  console.log(this.validatePassword);
      
-     let regex = /^[A-Z](?=(?:\D*[a-z]){2})(?=(?:\D*\d){1})[A-Za-z0-9_]{8,15}$/
+     let regex = /^[A-Z].*(?=(?:\D*[a-z]){2})]*.(?=(?:\D*\d){1})*.[A-Za-z0-9_]{4,15}$/
      console.log(regex.test(this.password));
      console.log(this.password);
-     this.validatePassword = regex.test(this.password)? '':'password must contain a combination of Uppercase characters (A-Z), Lowercase characters (a-z), Digits (0-9), and _'
+     this.validatePassword = regex.test(this.password)? '':'password must be 8 - 15 characters in length & contain a combination of Uppercase characters (A-Z), Lowercase characters (a-z), Digits (0-9), and _'
      }
     }
   }
