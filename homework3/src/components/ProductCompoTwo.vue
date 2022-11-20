@@ -16,13 +16,14 @@
             <h5> {{product.date}}</h5>
             <br>
             <div class="center_img">
-            <!-- <img src="../assets/logo.png"> this works-->
+                <img src="../assets/logo.png">
             <!-- <img :src="post.center_img"> -->
             </div>
             <p> {{product.message}} </p>
             <br>
             <div class="container_img_like_btn"> 
-                <span class="price"> Like:  {{product.like}} </span>
+                <button v-on:click="IncreasePrice "> Increase like </button>
+                <span class="price"> {{product.like}}</span>
                 <!-- <img :src="post.like_button" width="30" height="30"> -->
             </div>
         </div>
@@ -41,8 +42,13 @@
         productList(){
     return this.$store.state.productList
     }
-    }
-    }
+    },
+    methods: {
+        IncreasePrice: function() {
+            this.$store.dispatch("IncreasePriceAct")    
+        }
+    }}
+    
     </script>
     
     <style scoped>
