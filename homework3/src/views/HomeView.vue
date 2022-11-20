@@ -4,7 +4,7 @@
    <!-- <h2> Our Products page</h2> -->
    <product-compo-two></product-compo-two>
 
-   <button v-on:click="IncreasePrice "> Increase like </button>
+   <!-- <button v-on:click="IncreasePrice "> Increase like </button> -->
    <button v-on:click="ResetLike "> Reset likes </button>
   </div>
  </template>
