@@ -15,4 +15,4 @@
 
 
 ###### HW3 (homework3) [vue]
-[we used regextester.com to validate our rex statement (link)](https://www.regextester.com/)
+[used regextester.com to validate our rex statement](https://www.regextester.com/)
