@@ -5,10 +5,22 @@ export default createStore({
     state: {
             // productList should be placed here
             productList:[
-                {id: 1, author: "Charlotte Bronte", book: "Jane Eyre", goodreads: "4.1/5", price: 20},
-                {id: 2, author: "Margaret Mitchell", book: "Gone with the Wind", goodreads: "4.3/5", price: 22},
-                {id: 3, author: "Anthony Burgess", book: "A Clockwork Orange", goodreads: "4/5", price: 13},
-                {id: 4, author: "Fyodor Dostoevsky" , book: "Crime and Punishment", goodreads: "4.2/5", price: 18}
+                {id: 1, author: "John Doe", message: "Autumn in Tartu 2022", date: "Sep 30, 2022", like: 0},
+                {id: 2, author: "Margaret Mitchell", message: "Gone with the Wind", date: "4.3/5", like: 22},
+                {id: 3, author: "Anthony Burgess", message: "A Clockwork Orange", date: "4/5", like: 13},
+                {id: 4, author: "Fyodor Dostoevsky" , message: "Crime and Punishment", date: "4.2/5", like: 18}
+                // {
+                //   "userId": 1,
+                //   "index": 1,
+                //   "author": "John Doe",
+                //   "email": "john.doe..ut.ee",
+                //   "profile_img": "../assets/me.png",
+                //   "date": "Sep 30, 2022",
+                //   "center_img": "../assets/autumn.jpeg",
+                //   "center_img_caption": "Autumn in Tartu 2022",
+                //   "message": "",
+                //   "like_button": "../assets/like_btn_icon.png"
+                // }
                 ]
     },
   getters: {
@@ -20,9 +32,9 @@ export default createStore({
                return {
                    id: product.id,
                    author: product.author,
-                   price: product.price / 2,
-                   book: product.book,
-                   goodreads: product.goodreads
+                   like: product.like /2,
+                   message: product.message,
+                   date: product.date
                }
            });
            return productListsale
@@ -32,12 +44,12 @@ export default createStore({
            //The .forEach() method executes a callback function on each of the elements in an array in order. – Lecture 5
            IncreasePrice: state => {
             state.productList.forEach(product => {
-                product.price += 1;
+                product.like += 1;
             })
         },
-        DecreasePrice: state => {
+        ResetLike: state => {
             state.productList.forEach(product => {
-                product.price -= 1;
+                product.like = 0;
             })
         }
     },
@@ -47,9 +59,9 @@ export default createStore({
             act.commit("IncreasePrice")
         }, 1000)
     },
-    DecreasePriceAct: act => {
+    ResetLikeAct: act => {
         setTimeout(function() {
-            act.commit("DecreasePrice")
+            act.commit("ResetLike")
         }, 1000)
     }
     }

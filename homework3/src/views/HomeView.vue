@@ -1,10 +1,11 @@
 <template>
   <div class="products">
    <br>
-   <h2> Our Products page</h2>
+   <!-- <h2> Our Products page</h2> -->
    <product-compo-two></product-compo-two>
 
-   <button v-on:click="IncreasePrice "> Increase price </button>
+   <button v-on:click="IncreasePrice "> Increase like </button>
+   <button v-on:click="ResetLike "> Reset likes </button>
   </div>
  </template>
  
@@ -33,9 +34,9 @@
          }) 
      */
  },
- DecreasePrice: function() {
+ ResetLike: function() {
    //this.$store.commit("DecreasePrice")
-   this.$store.dispatch("DecreasePriceAct")
+   this.$store.dispatch("ResetLikeAct")
  }
  
  }

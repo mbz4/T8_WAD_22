@@ -3,9 +3,9 @@
     <h1> Book list two</h1>
     <p class="item" v-for="product in productList" :key="product.id">
     <span class="author"> <b>Author:</b> {{product.author}} </span>
-    <span class="book"> <b>Book:</b> {{product.book}} </span> <br>
-    <span class="goodreads"> <b>Goodreads:</b> {{product.goodreads}} </span>
-    <span class="price"> Price: € {{product.price}} </span> 
+    <span class="book"> <b>Message:</b> {{product.message}} </span> <br>
+    <span class="goodreads"> <b>Date:</b> {{product.date}} </span>
+    <span class="price"> Like:  {{product.like}} </span> 
     </p>
     </div>
     </template>
