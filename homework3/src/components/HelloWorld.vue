@@ -4,6 +4,7 @@
   </div> -->
   <Header/>
   <get-data :posts="posts"/>
+  <Footer/>
 
 </template>
 
@@ -16,10 +17,9 @@
 // }
 
 // @ is an alias to /src
-import getData from "@/components/getData.vue";
-import Header from "./Header.vue" ;
+import getData from "@/components/getData.vue"
+import Header from "./Header.vue" 
 import Footer from "./footer.vue"
-
 
 export default {
   name: "HelloWorld",

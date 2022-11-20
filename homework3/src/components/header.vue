@@ -22,15 +22,17 @@ and it should include navigation links/routes to both pages -->
   <style scoped>
   
   .Header {
-  border-radius: 12px;
-  background: #dedcdc;
-  padding: 5px;
-  display: flex;
-  font-family: 'Dancing Script', cursive;
-  font-family: 'Merriweather Sans', sans-serif;
-  position: fixed;
-  width: 98%;
-  top: 0;
+    border-radius: 15px;
+    background: #dedcdc;
+    padding: 5px;
+    display: flex;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Merriweather Sans', sans-serif;
+    position: fixed;
+    width: 100%;
+    top: 0;
+
+  
   }
 
   #app {

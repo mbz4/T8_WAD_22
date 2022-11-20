@@ -1,6 +1,9 @@
 <template>
+
+  <Header/>
+
   <div>
-      
+    
     <form @submit.prevent ="validateForm">
     <label for="email">Email</label>
     <input type="email" placeholder="Email" required v-model="email">
@@ -14,11 +17,18 @@
   </form>
   
   </div>  
-  </template>
+
+ 
+</template>
   
   <script>
+  import Header from "@/components/Header.vue" 
+  
+
   export default {
   name: "FormView", 
+  Header,
+  
   
   data: function() {
       return {
