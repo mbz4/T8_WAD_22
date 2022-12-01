@@ -8,6 +8,7 @@
     <span class="price"> Like:  {{product.like}} </span> 
     </p>
     </div> -->
+    <br>
     <section v-for="product in productList" :key="product.id">
         <div class="container post">
             <div class="container_img"> 
@@ -16,8 +17,8 @@
             <h5> {{product.date}}</h5>
             <br>
             <div class="center_img">
-                <img src="../assets/logo.png">
-            <!-- <img :src="post.center_img"> -->
+                <!-- <img src="../assets/logo.png"> -->
+                 <img :src="product.img"/>
             </div>
             <p> {{product.message}} </p>
             <br>

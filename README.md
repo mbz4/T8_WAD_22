@@ -14,4 +14,5 @@
 <a href="https://www.npoint.io/docs/d87cf4101f83b3cabd7f" target="_blank">considered npoint for json hosting</a>  
 
 
-###### HW3 (homework3) [vue]  
+###### HW3 (homework3) [vue]
+[used regextester.com to validate our rex statement](https://www.regextester.com/)
