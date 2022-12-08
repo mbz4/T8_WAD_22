@@ -12,14 +12,14 @@ const routes = [
     path: '/',
     name: 'home',
     component: HomeView,
-    beforeEnter: async(to, from, next) => {
-      let authResult = await auth.authenticated();
-      if (!authResult) {
-          next('/login')
-      } else {
-          next();
-      }
-  }
+  //   beforeEnter: async(to, from, next) => {
+  //     let authResult = await auth.authenticated();
+  //     if (!authResult) {
+  //         next('/login')
+  //     } else {
+  //         next();
+  //     }
+  // }
   },
   {
     path: '/contactus',
