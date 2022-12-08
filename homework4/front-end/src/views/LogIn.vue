@@ -59,7 +59,7 @@
   .form {
     max-width: 420px;
     margin: 30px auto;
-    background: rgb(167, 154, 154);
+    background: rgb(227, 249, 223);
     text-align: left;
     padding: 40px;
     border-radius: 10px;
@@ -69,7 +69,7 @@
     color: rgb(8, 110, 110);
   }
   label {
-    color: rgb(8, 110, 110);
+    color: rgb(0, 0, 0);
     display: inline-block;
     margin: 25px 0 15px;
     font-size: 0.8em;
@@ -87,14 +87,15 @@
     color: blue;
   }
   button {
-    background: rgb(8, 110, 110);
+    background: rgb(114, 174, 230);
     border: 0;
     padding: 10px 20px;
     margin: 20px 20px 20px 20px;
-    color: white;
+    color: rgb(0, 0, 0);
     border-radius: 20px;
     align-items: center;
     text-align: center;
+    font-weight: bold;
   }
   .center {
     margin: auto;

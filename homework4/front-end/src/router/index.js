@@ -37,8 +37,8 @@ const routes = [
     component: LogIn,
 },
 {
-  path: "/api/apost/:id",
-  // path: "/apost",
+  // path: "/api/apost/:id",
+  path: "/apost",
   name: "APost",
   component: APost,
 },
