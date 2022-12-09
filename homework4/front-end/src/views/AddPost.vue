@@ -32,8 +32,8 @@
         })
         .then((response) => {
           console.log(response.data);
-          // redirect to /allposts view
-          this.$router.push("/api/allposts");
+          // redirect to /AllPosts
+          this.$router.push("/api/AllPosts");
         })
         .catch((e) => {
           console.log(e);

@@ -4,8 +4,6 @@
         <h3>A Post</h3>
         <label for="body">Body: </label>
         <input name="body" type="text" id="body" required v-model="post.body" />
-      </div>
-      <div>
         <button @click="updatePost" class="updatePost">Update </button>   
         <button @click="deletePost" class="deletePost">Delete</button>
       </div>
@@ -45,7 +43,7 @@
             console.log(response.data);
             //this.$router.push("/apost/" + this.post.id);
             // We are using the router instance of this element to navigate to a different URL location
-            this.$router.push("/api/allposts");
+            this.$router.push("/api/AllPosts");
           })
           .catch((e) => {
             console.log(e);
@@ -60,7 +58,7 @@
           .then((response) => {
             console.log(response.data);
             // We are using the router instance of this element to navigate to a different URL location
-            this.$router.push("/api/allposts");
+            this.$router.push("/api/AllPosts");
           })
           .catch((e) => {
             console.log(e);
