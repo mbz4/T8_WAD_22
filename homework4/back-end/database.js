@@ -40,13 +40,28 @@ const createTblQuery = `
 	    "title" VARCHAR(200) NOT NULL,
 	    "body" VARCHAR(200) NOT NULL,
         "urllink" VARCHAR(200)  
-    );`;
+    );
+    CREATE TABLE IF NOT EXISTS "account" (
+	    "id" SERIAL PRIMARY KEY,         
+	    "accountName" VARCHAR(200) NOT NULL,
+	    "pasword" VARCHAR(200) NOT NULL
+    ); 
+    
+    `;
 
+const createTblaccount = `
+    CREATE TABLE IF NOT EXISTS "account" (
+	    "id" SERIAL PRIMARY KEY,         
+	    "accountName" VARCHAR(200) NOT NULL,
+	    "pasword" VARCHAR(200) NOT NULL
+    );`;
 // A function to execute the previous query   
+
 execute(createTblQuery).then(result => {
     if (result) {
         console.log('If does not exists, create the "posttable" table');
     }
 });
+
 
 module.exports = pool;
