@@ -3,7 +3,7 @@
     <h3>Add a Post</h3>
   
     <label for="body">Body: </label>
-    <input name="body" type="text" id="body" required v-model="post.body" />
+    <input name="body" type="text" id="body" placeholder="body" required v-model="post.body" />
    
     <button @click="addPost" class="addPost">Add Post</button>
   </div>

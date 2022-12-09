@@ -4,7 +4,7 @@
       <h3>A Post</h3>
     
       <label for="body">Body: </label>
-      <input name="body" type="text" id="body" required v-model="post.body" />
+      <input name="body" type="text" id="body" placeholder="body" required v-model="post.body" />
       <button @click="updatePost" class="updatePost">Update</button>
       <button @click="deletePost" class="deletePost">Delete</button>
     </div>
