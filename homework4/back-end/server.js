@@ -109,12 +109,12 @@ app.post('/api/account', async(req, res) => {
     try {
         console.log("a post request has arrived");
         const account = req.body;
-        const newpost = await pool.query(
+        const newAccount = await pool.query(
             "INSERT INTO account(name, password) values ($1, $2)    RETURNING*", [account.name, account.password]
             // The RETURNING keyword in PostgreSQL allows returning a value from the insert or update statement.
             // using "*" after the RETURNING keyword in PostgreSQL, will return everything
         );
-        res.json(newpost);
+        res.json(newAccount);
     } catch (err) {
         console.error(err.message);
     }
