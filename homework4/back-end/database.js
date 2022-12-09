@@ -40,12 +40,18 @@ const createTblQuery = `
 	    "id" SERIAL PRIMARY KEY,         
 	    "body" VARCHAR(200) NOT NULL
       
+    );
+    
+    CREATE TABLE IF NOT EXISTS "users" (
+        id uuid PRIMARY KEY DEFAULT gen_random_uuid(),
+        email VARCHAR(200) NOT NULL UNIQUE,
+        password VARCHAR(200) NOT NULL 
     );`;
 
 // A function to execute the previous query   
 execute(createTblQuery).then(result => {
     if (result) {
-        console.log('If does not exists, create the "posttable" table');
+        console.log('If does not exists, create the "posttable" and "users" table');
     }
 });
 
