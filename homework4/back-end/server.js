@@ -104,6 +104,36 @@ app.delete('/api/posts/:id', async(req, res) => {
     }
 }); 
 
+// Task 6 - Handling POST requests - Create account requests
+app.post('/api/account', async(req, res) => {
+    try {
+        console.log("a post request has arrived");
+        const account = req.body;
+        const newpost = await pool.query(
+            "INSERT INTO account(name, password) values ($1, $2)    RETURNING*", [account.name, account.password]
+            // The RETURNING keyword in PostgreSQL allows returning a value from the insert or update statement.
+            // using "*" after the RETURNING keyword in PostgreSQL, will return everything
+        );
+        res.json(newpost);
+    } catch (err) {
+        console.error(err.message);
+    }
+}); 
+
+// Task 7 - Handling GET – Fetch  passwords where mails = given
+app.get('/api/account/:name', async(req, res) => {
+    try {
+        const { name } = req.params;
+        console.log("get posts request has arrived");
+        const account = await pool.query(
+            "SELECT  'password' FROM account WHERE name = $1",[name]
+        );
+        res.json(account.rows);
+    } catch (err) {
+        console.error(err.message);
+    }
+});
+
 app.listen(port, () => {
     console.log("Server is listening to port " + port)
 });

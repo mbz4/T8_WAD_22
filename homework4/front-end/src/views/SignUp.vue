@@ -1,6 +1,6 @@
 
 <template>
-    <div class="form">
+    <div class="form account">
       <h3>SignUp</h3>
       <label for="email">Email</label>
       <input type="email" name="email"  required v-model="email">

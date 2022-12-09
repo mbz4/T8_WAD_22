@@ -43,23 +43,17 @@ const createTblQuery = `
     );
     CREATE TABLE IF NOT EXISTS "account" (
 	    "id" SERIAL PRIMARY KEY,         
-	    "accountName" VARCHAR(200) NOT NULL,
-	    "pasword" VARCHAR(200) NOT NULL
+	    "name" VARCHAR(200) NOT NULL,
+	    "password" VARCHAR(200) NOT NULL
     ); 
     
     `;
 
-const createTblaccount = `
-    CREATE TABLE IF NOT EXISTS "account" (
-	    "id" SERIAL PRIMARY KEY,         
-	    "accountName" VARCHAR(200) NOT NULL,
-	    "pasword" VARCHAR(200) NOT NULL
-    );`;
 // A function to execute the previous query   
 
 execute(createTblQuery).then(result => {
     if (result) {
-        console.log('If does not exists, create the "posttable" table');
+        console.log('If does not exists, create the "posttable"  and "account" table');
     }
 });
 
