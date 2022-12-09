@@ -5,8 +5,8 @@
     
       <label for="body">Body: </label>
       <input name="body" type="text" id="body" required v-model="post.body" />
-      <button @click="updatePost" class="updatePost">Update Post</button>
-      <button @click="deletePost" class="deletePost">Delete Post</button>
+      <button @click="updatePost" class="updatePost">Update</button>
+      <button @click="deletePost" class="deletePost">Delete</button>
     </div>
   </div>
 </template>
