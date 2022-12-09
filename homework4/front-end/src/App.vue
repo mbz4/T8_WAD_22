@@ -1,17 +1,14 @@
 <template>
   <div>
-    
-  <nav>
-    <!-- <router-link to="/">Home</router-link> |  -->
-    <router-link to="/api/allposts">Home</router-link> |
-    <router-link to="/contactus">Contacts</router-link>
-    <!-- | <router-link to="/signup">SignUp</router-link> |
-    <router-link to="/login">LogIn</router-link> -->
-    | <router-link to="/api/addpost">Add Post</router-link>
-    | <router-link to="apost">A Post</router-link>
-  </nav>
-  <router-view/>
-</div>
+    <nav>
+      <router-link to="/api/allposts">Home</router-link> |
+      <!-- <router-link to="/api/addpost">Add a Post</router-link> |  -->
+      <router-link to="/contactus">Contacts</router-link>
+      <!-- | <router-link to="/signup">SignUp</router-link> |
+      <router-link to="/login">LogIn</router-link> -->
+    </nav>
+    <router-view />
+  </div>
 </template>
 
 <style>

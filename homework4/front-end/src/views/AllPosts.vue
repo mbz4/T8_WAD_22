@@ -1,13 +1,20 @@
 <template>
   <div class="AllPosts">
     <div id="post-list">
-    <h1>All Posts</h1>
+    <h1>Home</h1>
       <ul>
         <div class="item" v-for="post in posts" :key="post.id">
           <!-- / We are putting an anchor for each post, when we click on it, we will be directed to the specific post view (/apost/) /  -->
           <a class="singlepost" :href="'/api/apost/' + post.id">
-            <span class="body"> <b>Body:</b> {{ post.body }} </span> <br />
+        
+            <span class="body"> {{ post.body }} </span>
+           
           </a>
+        </div>
+        <div> 
+          <a href="/api/addpost"> 
+          <button @click="AddPost" class="AddPost">Add Post</button> </a>
+          <button @click="deleteall" class="deleteall">Delete all</button>
         </div>
       </ul>
     </div>
@@ -31,6 +38,22 @@ export default {
         .then((response) => response.json())
         .then((data) => (this.posts = data))
         .catch((err) => console.log(err.message));
+    },
+
+    deleteall() {
+      // using Fetch - delete method - delets a specific post based on the passed id
+      fetch(`http://localhost:3000/api/allposts/`, {
+        method: "DELETE",
+        headers: { "Content-Type": "application/json" },
+      })
+        .then((response) => {
+          console.log(response.data);
+          // We are using the router instance of this element to navigate to a different URL location
+          this.$router.go("/api/allposts");
+        })
+        .catch((e) => {
+          console.log(e);
+        });
     },
   },
   mounted() {
