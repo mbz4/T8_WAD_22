@@ -143,9 +143,16 @@ app.post('/api/posts', async(req, res) => {
         const post = req.body;
         let currentDate = new Date();
         let cDay = currentDate.getDate()
-        let cMonth = currentDate.getMonth() + 1
+        
+        const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+        // document.write("The current month is " + monthNames[d.getMonth()]);
+        // var date = currentDate.toLocaleFormat('%b %d, %Y'); // Jun 30, 2020
+        // let cMonth = (currentDate.getMonth() + 1).toLocaleString()
+        let cMonth = monthNames[currentDate.getMonth()]
+        
         let cYear = currentDate.getFullYear()
-        var date = cDay + "/" + cMonth + "/" + cYear
+        var date = cMonth + " " + cDay + ", "  + cYear
+
         const newpost = await pool.query(
             "INSERT INTO posttable( body, date) values ($1, $2)    RETURNING*", [ post.body, date]
             // $1, $2, $3 are mapped to the first, second and third element of the passed array (post.title, post.body, post.urllink)

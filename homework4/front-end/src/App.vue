@@ -26,21 +26,22 @@
 
 nav {
   padding: 30px;
-  background-color: #F1F1F1;
+  background-color: #bbbbbb;
   text-align: center;
 }
 
 nav a {
   font-weight: bold;
   color: #2c3e50;
+  text-decoration: none;
 }
 
 nav a.router-link-exact-active {
-  color: #42b983;
+  color: #5c5d5e;
 }
 
 .footer {
-  background-color: #f1f1f1;
+  background-color: #bbbbbb;
   padding: 10px;
   text-align: center;
   font-weight: bold;

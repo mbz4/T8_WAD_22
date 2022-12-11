@@ -118,4 +118,8 @@ export default {
     border-radius: 20px;
     font-weight: bold;
   }
+
+ .updatePost{
+  margin-right: 20px;
+  }
   </style>

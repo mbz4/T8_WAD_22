@@ -4,13 +4,17 @@
     <button v-if = "authResult" @click="Logout" class="center">Logout</button>
     </div>
     <div id="post-list">
-    <h1>Home</h1>
+    <!-- <h1>Home</h1> -->
       <ul>
         <div class="item" v-for="post in posts" :key="post.id">
           <!-- / We are putting an anchor for each post, when we click on it, we will be directed to the specific post view (/apost/) /  -->
           <a class="singlepost" :href="'/api/apost/' + post.id">
             <span class="date"> {{ post.date }} </span>
+            <br><br>
             <span class="body"> {{ post.body }} </span>
+            <div>
+              <br>
+            </div>
            
           </a>
         </div>
@@ -102,18 +106,16 @@ h1 {
 a {
   text-decoration: none;
 }
-a:hover {
-  text-decoration: underline;
-}
+
 .item {
-  background: rgb(189, 212, 199);
+  background: rgb(217, 217, 217);
   margin-bottom: 5px;
   padding: 3px 5px;
   border-radius: 10px;
 }
 #post-list {
-  background: #6e8b97;
-  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.2);
+  /* background: #ffffff;
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.2); */
   margin-bottom: 30px;
   padding: 10px 20px;
   margin: auto;
@@ -129,5 +131,27 @@ a:hover {
   margin-top: 10px;
   padding: 20px;
   background: rgba(255, 255, 255, 0.7);
+}
+
+button {
+    background: rgb(114, 174, 230);
+    border: 0;
+    padding: 10px 20px;
+    margin-top: 20px;
+    color: rgb(0, 0, 0);
+    border-radius: 20px;
+    font-weight: bold;
+  }
+
+.AddPost{
+  margin-right: 100px;
+  }
+.deleteall{
+  margin-left: 50px;
+}
+
+.date{
+  float: right;
+  padding: 10px;
 }
 </style>
