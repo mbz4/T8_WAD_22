@@ -10,6 +10,9 @@
     </nav>
     <router-view />
   </div>
+  <div class="footer">
+    <p>©2022 by Team8 / Group AT</p>
+  </div>
 </template>
 
 <style>
@@ -23,6 +26,8 @@
 
 nav {
   padding: 30px;
+  background-color: #F1F1F1;
+  text-align: center;
 }
 
 nav a {
@@ -32,5 +37,12 @@ nav a {
 
 nav a.router-link-exact-active {
   color: #42b983;
+}
+
+.footer {
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
 }
 </style>
