@@ -1,31 +1,39 @@
 <template>
-  <div class="AllPosts">
-    <div class="container">
-    <button v-if = "authResult" @click="Logout" class="center">Logout</button>
-    </div>
-    <div id="post-list">
-    <!-- <h1>Home</h1> -->
-      <ul>
-        <div class="item" v-for="post in posts" :key="post.id">
-          <!-- / We are putting an anchor for each post, when we click on it, we will be directed to the specific post view (/apost/) /  -->
-          <a class="singlepost" :href="'/api/apost/' + post.id">
-            <span class="date"> {{ post.date }} </span>
-            <br><br>
-            <span class="body"> {{ post.body }} </span>
-            <div>
-              <br>
-            </div>
-           
-          </a>
-        </div>
-        <div> 
-          <a href="/api/addpost"> 
-          <button @click="AddPost" class="AddPost">Add Post</button> </a>
-          <button @click="deleteall" class="deleteall">Delete all</button>
-        </div>
-      </ul>
+<div id = "grid"> 
+  <div id ="column_left">
+  </div>
+  <div id="column_middle" >
+    <div class="AllPosts">
+      <div class="container">
+      <button v-if = "authResult" @click="Logout" class="center">Logout</button>
+      </div>
+      <div id="post-list">
+      <!-- <h1>Home</h1> -->
+        <ul>
+          <div class="item" v-for="post in posts" :key="post.id">
+            <!-- / We are putting an anchor for each post, when we click on it, we will be directed to the specific post view (/apost/) /  -->
+            <a class="singlepost" :href="'/api/apost/' + post.id">
+              <span class="date"> {{ post.date }} </span>
+              <br><br>
+              <span class="body"> {{ post.body }} </span>
+              <div>
+                <br>
+              </div>
+            
+            </a>
+          </div>
+          <div> 
+            <a href="/api/addpost"> 
+            <button @click="AddPost" class="AddPost">Add Post</button> </a>
+            <button @click="deleteall" class="deleteall">Delete all</button>
+          </div>
+        </ul>
+      </div>
     </div>
   </div>
+  <div id="column_right">
+  </div>
+</div>
 </template>
 
 
@@ -133,6 +141,7 @@ a {
   background: rgba(255, 255, 255, 0.7);
 }
 
+
 button {
     background: rgb(114, 174, 230);
     border: 0;
@@ -144,14 +153,45 @@ button {
   }
 
 .AddPost{
-  margin-right: 100px;
+  margin-right: 40px;
   }
+
 .deleteall{
-  margin-left: 50px;
+  margin-left: 40px;
 }
 
 .date{
   float: right;
   padding: 10px;
 }
+
+#grid {
+  display: grid;
+  grid-template-columns: repeat(5, 2fr);
+  grid-template-rows: auto;
+  padding-top: 55px;
+  
+}
+
+#column_left {
+  background-color:#ccc;
+  border-radius: 25px;
+  margin-top: 1px;
+  grid-column: 1/1;
+  margin-bottom: 30px;
+ 
+}
+
+#column_middle {
+  grid-column: 2/5;
+}
+
+#column_right {
+  background-color:#ccc;
+  grid-column:   5/6;
+  border-radius: 25px;
+  margin-top: 1px;
+  margin-bottom: 30px;
+}
+
 </style>
