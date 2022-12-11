@@ -14,8 +14,8 @@ const Pool = require('pg').Pool;
 const pool = new Pool({
     user: "postgres",
     // password: "DBA", // Enter your password here
-    // password: "okay592", // Enter your password here
-    password: "1131", // Enter your password here
+    password: "okay592", // Enter your password here
+    // password: "1131", // Enter your password here
     database: "testWad", //Try to use the same name for your database
     host: "localhost",
     port: "5432"
@@ -39,7 +39,8 @@ const execute = async(query) => {
 const createTblQuery = `
     CREATE TABLE IF NOT EXISTS "posttable" (
 	    "id" SERIAL PRIMARY KEY,         
-	    "body" VARCHAR(200) NOT NULL
+	    "body" VARCHAR(200) NOT NULL,
+        "date" VARCHAR(200)
       
     );
     
