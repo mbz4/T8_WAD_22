@@ -18,16 +18,19 @@
 [used regextester.com to validate our rex statement](https://www.regextester.com/)
 
 ###### HW4 (homework4) [node.js]
-####### Project setup
+
+Project setup
 ```
 npm install
 ```
 
-####### front-end
-
+front-end
+```
 npm run serve
+```
 
-####### back-end
+back-end
+```
 node server
-
+```
 
